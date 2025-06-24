@@ -1,12 +1,57 @@
-# React + Vite
+# 📋 SmarTask
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**SmarTask** is a full-stack task and team management web application designed to simplify workflows, improve collaboration, and help users manage tasks with clarity and ease.
 
-Currently, two official plugins are available:
+> 🚀 Personal portfolio project built to showcase modern full-stack development skills.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- ✅ Create, assign, and track tasks in real time
+- 📅 Drag-and-drop calendar & Kanban board views
+- 👥 Team collaboration with comments & mentions
+- 🔔 Smart notifications for deadlines and updates
+- 📊 Dashboard with task stats & project insights
+- 🔐 JWT-based authentication & protected routes
+- 🎨 Responsive UI built with Tailwind CSS
+
+---
+
+## 🧠 Tech Stack
+
+### Frontend
+- HTML5
+- CSS3
+- React
+- React Router
+- Axios
+
+### Backend
+- Node.js
+- Express.js
+- MongoDB + Mongoose
+- Socket.io (real-time updates)
+- JSON Web Tokens (JWT)
+
+### Tools & Hosting
+- GitHub for version control
+- Vercel (Frontend) • Render / Railway / Heroku (Backend)
+- Postman (API testing)
+
+---
+
+## 🧭 Project Structure
+
+```bash
+smartask/
+├── client/               # React frontend
+│   ├── components/
+│   ├── pages/
+│   └── ...
+├── server/               # Node.js backend
+│   ├── routes/
+│   ├── controllers/
+│   └── ...
+├── README.md
+└── ...
