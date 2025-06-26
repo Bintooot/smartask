@@ -1,0 +1,27 @@
+section.banner-wrapper {
+  width: 100%;
+  height: 400px;
+  background: var(--primary-color);
+  padding: 20px;
+  color: var(--text-color);
+  font-family: var(--font-primary);
+}
+
+div.banner-content {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+div.banner-content > h2 {
+  font-size: 4rem;
+}
+
+div.banner-content > p {
+  font-size: 1.5rem;
+}
+
+div.demo-button-wrapper {
+  margin: 20px 0;
+}

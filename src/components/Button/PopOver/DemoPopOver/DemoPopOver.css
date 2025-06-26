@@ -1,0 +1,66 @@
+button.demo-popover {
+  padding: 10px 20px;
+  border: none;
+  width: 200px;
+  font-size: 1.25rem;
+  font-family: var(--font-primary);
+  color: var(--primary-color);
+  transition: all 0.3s ease;
+}
+
+button.demo-popover:hover {
+  cursor: pointer;
+  background: rgb(210, 210, 253);
+}
+
+div#popover {
+  position: absolute;
+  width: 30%;
+  height: fit-content;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 20px;
+  gap: 20px;
+}
+
+div#popover > h2 {
+  font-size: 2rem;
+  font-family: var(--font-alt);
+  font-family: var(--font-primary);
+}
+
+div.button-action-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+form.validation-form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 5px;
+  margin: 20px 0;
+}
+
+input#email {
+  padding: 10px;
+  width: 100%;
+}
+
+input#email:focus {
+  outline: none;
+  border: 2px solid var(--primary-color);
+}
+
+div.button-action-wrapper > button {
+  padding: 10px 20px;
+  background: var(--primary-color);
+  border: none;
+  color: var(--text-color);
+  width: 150px;
+}
