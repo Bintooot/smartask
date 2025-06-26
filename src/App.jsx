@@ -1,10 +1,15 @@
 import React from "react";
-import Header from "./components/Header/Header.jsx";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import PublicLayout from "./layouts/PublicLayout/PublicLayout.jsx";
 
 const App = () => {
   return (
     <>
-      <Header />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/*" element={<PublicLayout />}></Route>
+        </Routes>
+      </BrowserRouter>
     </>
   );
 };
