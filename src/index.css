@@ -13,4 +13,7 @@
   --panel: #f2f5ff;
   --border: #111827;
   --text-color: #fff;
+  --error: #ef4444;
+  --success: #10b981;
+  --warning: #f59e0b;
 }

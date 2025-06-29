@@ -22,10 +22,18 @@ const DemoPopOver = (props) => {
         </form>
 
         <div className="button-action-wrapper">
-          <button popovertarget="popover" popovertargetaction="hide">
+          <button
+            popovertarget="popover"
+            popovertargetaction="hide"
+            id="cancel-email"
+          >
             Cancel
           </button>
-          <button popovertarget="popover" popovertargetaction="hide">
+          <button
+            popovertarget="popover"
+            popovertargetaction="hide"
+            id="check-email"
+          >
             Check Email
           </button>
         </div>

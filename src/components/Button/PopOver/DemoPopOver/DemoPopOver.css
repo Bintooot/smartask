@@ -20,8 +20,8 @@ div#popover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  border: 1px solid gray;
-  border-radius: 10px;
+  border: none;
+  box-shadow: 0 0 3px #969595;
   padding: 20px;
   gap: 20px;
 }
@@ -50,6 +50,8 @@ form.validation-form {
 input#email {
   padding: 10px;
   width: 100%;
+  border: none;
+  border-bottom: 1px solid #969595;
 }
 
 input#email:focus {
@@ -63,4 +65,13 @@ div.button-action-wrapper > button {
   border: none;
   color: var(--text-color);
   width: 150px;
+  cursor: pointer;
+}
+
+div.button-action-wrapper > button#check-email {
+  background: var(--success);
+}
+
+div.button-action-wrapper > button#cancel-email {
+  background: var(--error);
 }
