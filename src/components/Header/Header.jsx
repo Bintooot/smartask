@@ -1,35 +1,37 @@
 import React from "react";
 import "./Header.css";
 import { Github, CircleUser } from "lucide-react";
+import { NavLink, useLocation } from "react-router-dom";
 
 const navlink = [
   {
     id: "1",
     label: "Home",
-    href: "#",
+    href: "/home",
     title: "home",
   },
   {
     id: "2",
     label: "Overview",
-    href: "#",
+    href: "/overview",
     title: "overview",
   },
   {
     id: "3",
     label: "About",
-    href: "#",
+    href: "/about",
     title: "about",
   },
   {
     id: "4",
     label: "Contact",
-    href: "#",
+    href: "/contact",
     title: "contact",
   },
 ];
 
 const Header = () => {
+  const location = useLocation();
   return (
     <header className="header-wrapper">
       <div className="header-container">
@@ -37,13 +39,17 @@ const Header = () => {
           <h1 className="title">SmarTask</h1>
           <nav className="header-navlink">
             <ul>
-              {navlink.map((items) => (
-                <li key={items.id}>
-                  <a href={items.href} title={items.title}>
-                    {items.label}
-                  </a>
-                </li>
-              ))}
+              {navlink.map((items) => {
+                const isActive = location.pathname === items.href;
+
+                return (
+                  <li key={items.id} className={isActive ? "active" : ""}>
+                    <NavLink to={items.href} title={items.title}>
+                      {items.label}
+                    </NavLink>
+                  </li>
+                );
+              })}
             </ul>
           </nav>
         </div>
