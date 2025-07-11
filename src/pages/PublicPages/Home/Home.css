@@ -1,0 +1,64 @@
+main.main-wrapper {
+  width: 100%;
+  align-content: center;
+  min-height: 100vh;
+}
+
+section.main-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 85%;
+  margin: 0 auto;
+}
+
+div.main-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+div.main-info > h1 {
+  font-size: 4rem;
+  font-family: var(--font-alt);
+}
+
+div.main-info > p {
+  font-size: 1.25rem;
+  font-family: var(--font-heading);
+}
+
+div.main-info > p > span {
+  color: var(--secondary-color);
+}
+
+div.main-form-wrapper {
+  display: flex;
+  width: 90%;
+  gap: 10px;
+}
+
+div.main-form-wrapper > form {
+  flex: 1;
+}
+div.main-form-wrapper > form > input#email {
+  padding: 15px;
+  width: 100%;
+  border: 1px solid var(--input-border);
+}
+
+div.main-form-wrapper > form > input#email:focus {
+  outline: 1px solid var(--secondary-color);
+  border: none;
+}
+
+button#email-id {
+  width: 142px;
+  padding: 10px 20px;
+  border: none;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  cursor: pointer;
+  font-family: var(--font-primary);
+  font-weight: bold;
+}

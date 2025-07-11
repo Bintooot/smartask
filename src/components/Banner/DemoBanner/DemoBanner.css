@@ -25,3 +25,15 @@ div.banner-content > p {
 div.demo-button-wrapper {
   margin: 20px 0;
 }
+
+div.demo-button-wrapper > button#demo-button {
+  padding: 10px;
+  width: 192px;
+  height: 53px;
+  font-size: 1.25rem;
+  font-weight: bold;
+  font-family: var(--font-primary);
+  color: var(--primary-color);
+  border: none;
+  cursor: pointer;
+}

@@ -1,6 +1,5 @@
 import React from "react";
 import "./DemoBanner.css";
-import DemoPopOver from "../../Button/PopOver/DemoPopOver/DemoPopOver.jsx";
 
 const DemoBanner = () => {
   return (
@@ -11,7 +10,7 @@ const DemoBanner = () => {
           Start exploring TaskFlow and see how simple task management can be.
         </p>
         <div className="demo-button-wrapper">
-          <DemoPopOver title="Start Demo" />
+          <button id="demo-button">Start Demo</button>
         </div>
       </div>
     </section>
